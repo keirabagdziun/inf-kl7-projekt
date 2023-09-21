@@ -1,33 +1,155 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Croissant+One&display=swap');
 
+:root {
+    --color-lightblue: #BDE0FE;
+    --color-lightpink: #FFC8DD;
+    --color-lightskyblue:#A2D2FF;
+    --color-purplecottoncandy:#cca9e0;
+    --color-carnationpink: #FFAFCC;
+    --color-raspberry: #f8007c;
+    --color-hotpink: hotpink;
+    --color-blackchocolate:rgb(24, 13, 2);
+    --color-mimipink: #FFD6FF;
+    --color-awesomepurple:#E7C6FF;
+    --color-maueve:#C8B6FF;
+    --color-midnight:#B8C0FF;
+    --color-perwinkle: #BBD0FF;
+}
+
+
 * {
     font-family: 'Croissant One', cursive;  
     color: rgb(0, 0, 0);
-    font-size: 25px;
+    font-size: 18px;
 }
 
- header nav ul {
-    width: 300px;
-    margin: 0 auto;
-    list-style: none;
+
+a:link {
+    color: var(--color-raspberry);
 }
+
+a:visited {
+color:var(--color-purplecottoncandy);
+}
+
+a:hover {
+color:var(--color-hotpink);
+}
+
+a:active {
+color:var(--color-lightpink);
+}
+
+#logo {
+    height:300px;
+    width:250px;
+}
+
+#studying {
+    background-color: var(--color-mimipink);
+    border-radius: 20px;
+    height: auto;
+    width: auto;
+    padding: 10px;
+    margin: 20px 10px;
+}
+
+#links {
+    background-color: var(--color-mimipink);
+    border-radius: 20px;
+    height: auto;
+    width: auto;
+    padding: 10px;
+    margin: 20px 10px;
+}
+    
+@keyframes mymove {
+   0% {
+    background-color:var(--color-mimipink);
+   }
+
+    20% {
+        background-color: var(--color-awesomepurple);
+    }
+
+    40% {
+        background-color: var(--color-maueve);
+    }
+
+    60% {
+        background-color: var(--color-midnight);
+    }
+
+    80% {
+        background-color: var(--color-perwinkle);
+    }
+
+    100% {
+        background-color:var(--color-mimipink) ;
+    }
+}
+
+
+
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--color-perwinkle);
+}
+
+header {
+    background: var(--color-lightblue);
+    animation: mymove 10s ease-in-out infinite;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+header nav ul {
+    height:180px;
+    width: 300px;
+    list-style: none;
+    background-image:url(https://images.unsplash.com/photo-1529905270444-b5e32acc3bdd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzN8fGFlc3RoZXRpYyUyMGNsb3Vkc3xlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=400&q=60)
+}
+
+footer {
+    padding: 10px;
+    margin: 20px 10px;
+}
+
+
 
 #places {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-around;
+    row-gap: 20px;
 }
 
 #places article {
-    width: 33%;
+    width: 30%;
+    background-color: #fff;
+    padding: 10px;
+    border: 5px dotted var(--color-carnationpink);
+    border-radius: 25px;
+}
+
+#places article p {
+    padding: 10px;
+}
+
+#places article h3 {
+    padding: 10px;
 }
 
 .handwriting {
     font-family: 'Dancing Script', cursive;
-    cursor: cell;
+    cursor: default;
     text-align:center;
-    margin-top:30px;
-    
 }
 
 
@@ -45,6 +167,7 @@
     overflow: hidden;
     margin: 0 auto;
     border-radius: 25px;
+    
 }
 
 .gallery img {
@@ -60,19 +183,25 @@
 
 h1{
     font-size: 50px;
+    margin: 0;
+}
+
+h3{
+    text-decoration: underline wavy var(--color-purplecottoncandy) 3px;
+    text-underline-offset: 7px;
 }
 
 
 
 @media (max-width: 1280px) {
     #places article {
-        width: 50%;
+        width: 45%;
     }
 }
 
 
 @media (max-width: 768px) {
     #places article {
-        width: 100%;
+        width: 92%;
     }
 }
