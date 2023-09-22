@@ -19,32 +19,32 @@
 
 
 * {
-    font-family: 'Croissant One', cursive;  
-    color: rgb(0, 0, 0);
-    font-size: 18px;
+     font-family: 'Croissant One', cursive;  
+        color: rgb(0, 0, 0);
+        font-size: 18px;
 }
 
 
 a:link {
-    color: var(--color-raspberry);
+        color: var(--color-raspberry);
 }
 
 a:visited {
-color:var(--color-purplecottoncandy);
+    color:var(--color-purplecottoncandy);
 }
 
 a:hover {
-color:var(--color-hotpink);
+    color:var(--color-hotpink);
 }
 
 a:active {
-color:var(--color-lightpink);
+    color:var(--color-lightpink);
 }
 
 #logo {
-    height:300px;
-    width:250px;
-    overflow:hidden;
+        height:300px;
+        width:250px;
+        overflow:hidden;
 
 }
 
@@ -59,47 +59,38 @@ color:var(--color-lightpink);
 }
 
 
-#studying {
-    background-color: var(--color-mimipink);
-    border-radius: 20px;
-    height: auto;
-    width: auto;
-    padding: 10px;
-    margin: 20px 10px;
-}
+.
 
-#links {
+.links {
     background-color: var(--color-mimipink);
     border-radius: 20px;
-    height: auto;
-    width: auto;
     padding: 10px;
     margin: 20px 10px;
 }
     
 @keyframes mymove {
    0% {
-    background-color:var(--color-mimipink);
+        background-color:var(--color-mimipink);
    }
 
     20% {
-        background-color: var(--color-awesomepurple);
+         background-color: var(--color-awesomepurple);
     }
 
     40% {
-        background-color: var(--color-maueve);
+         background-color: var(--color-maueve);
     }
 
     60% {
-        background-color: var(--color-midnight);
+            background-color: var(--color-midnight);
     }
 
     80% {
-        background-color: var(--color-perwinkle);
+         background-color: var(--color-perwinkle);
     }
 
     100% {
-        background-color:var(--color-mimipink) ;
+         background-color:var(--color-mimipink) ;
     }
 }
 
@@ -107,26 +98,26 @@ color:var(--color-lightpink);
 
 
 body {
-    margin: 0;
-    padding: 0;
+     margin: 0;
+     padding: 0;
     background-color: var(--color-perwinkle);
 }
 
 header {
-    background: var(--color-lightblue);
-    animation: mymove 10s ease-in-out infinite;
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 20px;
-    justify-content: center;
-    align-items: center;
+        background: var(--color-lightblue);
+        animation: mymove 10s  infinite;
+        display: flex;
+        flex-direction: column;
+         margin-bottom: 20px;
+        justify-content: center;
+        align-items: center;
 }
 
 header nav ul {
-    height:180px;
-    width: 300px;
-    list-style: none;
-    background-image:url(https://images.unsplash.com/photo-1529905270444-b5e32acc3bdd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzN8fGFlc3RoZXRpYyUyMGNsb3Vkc3xlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=400&q=60)
+        height:180px;
+        width: 300px;
+        list-style: none;
+        background-image:url(https://images.unsplash.com/photo-1529905270444-b5e32acc3bdd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzN8fGFlc3RoZXRpYyUyMGNsb3Vkc3xlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=400&q=60)
 }
 
 footer {
@@ -161,8 +152,7 @@ footer {
 
 .handwriting {
     font-family: 'Dancing Script', cursive;
-    cursor: default;
-    text-align:center;
+    cursor: pointer;
 }
 
 
